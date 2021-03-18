@@ -6,26 +6,23 @@
         <body>
             <div class="centradora centrar">
                 <h2>Contacteme</h2>
-                <form action="https://api.web3forms.com/submit" method="POST">
-
-                    <input type="hidden" name="apikey" value="30f61673-465c-4ae6-9a33-207c9c57ad95">
+                <form action="https://gemetech.co/mail/mail.php" method="POST">
                     
                     <label for="usuario">Ingrese su nombre:</label><br>
-                    <input type="text" name="usuario" placeholder="Aqui su nombre" maxlength="40" id="usuario" required>
-                    <br><br>
-        
-                    <label for="subject">Asunto:</label><br>
-                    <input type="text" name="subject" placeholder="Aqui su asunto" maxlength="40" id="subject" required>
+                    <input type="text" name="nombre" placeholder="Aqui su nombre" maxlength="40" id="usuario" required>
                     <br><br>
         
                     <label for="email">Ingrese su correo</label><br>
-                    <input type="email" name="email" placeholder="Aqui su correo" maxlength="40" id="email" required>
+                    <input type="email" name="destinatario" placeholder="Aqui su correo" maxlength="40" id="email" required>
+                    <br><br>
+
+                    <label for="subject">Asunto:</label><br>
+                    <input type="text" name="asunto" placeholder="Aqui su asunto" maxlength="40" id="subject" required>
                     <br><br>
         
                     <label for="message">Ingrese su mensaje:</label><br>
-                    <textarea name="message" name="message" id="message" required></textarea>
+                    <textarea name="mensaje" id="message" required></textarea>
                     <br><br>
-                    
                     <button type="submit" class="boton">Enviar</button>
                 </form>
             </div>
