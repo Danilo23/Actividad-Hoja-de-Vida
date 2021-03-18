@@ -1,100 +1,83 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Mi Hoja de Vida</title>
     <meta charset="utf-8">
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 5px;
-            text-align: left;    
-        }
-    </style>
     </head>
     <body>
-        <img src="data:image/jpeg;base64,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" alt="Imagen Hoja de Vida" width="1000px" height="300px">   
-        <h1 style="color:crimson">Danilo Esteban Quintero Duran</h1>
-        <h2>09 / 08 / 1999</h2>
-        <p>Mi nombre es Danilo Quintero mi infancia fue muy buena, muy divertida, salia todos los dias a la cuadra a jugar lo tipico en esos tiempos (la lleva, stop, el quemado, etc) jugaba mucho futbol, viaje a unos cuantos pueblos, no muchos y paises conozco solo Colombia mi pais natal y Venezuela.</p>
-        <p>Soy estudiante de ingenieria de sistemas, la carrera es lo que esperaba, bastante dificil pero emocionante, lo que mas se me ha complicado es la fisica, lo que mas me gusta de la carrera es la programación, mas que todo orientada a web o a videojuegos, en 5 años me veo como desarrollador.</p>
-        <h3>Mis Hobbies</h3>
-        <ul>
-            <li>Futbol</li>
-            <li>Videojuegos</li>
-            <li>escuchar musica</li>
-            <li>programar videojuegos</li>
-        </ul>
-        <h3>Mis películas y series favoritas</h3>
-        <ul>
-            <li>armageddon</li>
-            <li>La casa de papel</li>
-            <li>Bajo la misma estrella</li>
-            <li>The Good Doctor</li>
-            <li>La milla verde</li>
-        </ul>
-        <h3>Mi cancion favorita</h3>
-        <audio controls>
-            <source src="la-promesa.mp3" type="audio/mpeg">
-          </audio>
-          <h3>Mis materias favoritas</h3>
-          <table style="width:100%">
-            <tr>
-              <th>Materia</th>
-              <th>Nota</th>
-              <th>Porque es de las favoritas</th>   
-            </tr>
-            <tr>
-                <td>Fundamentos de programación</td>
-                <td>3.1</td>
-                <td>Me gusto mucho porque fue la primera vez que entre al mundo de la programación y aprendi por primera vez los fundamentos de un lenguaje.</td>
-            </tr>
-            <tr>
-                <td>Programación Orientada a Objetos 2</td>
-                <td>4.1</td>
-                <td>Me encanto esta materia porque fue la primera vez que vi programacion web, una rama que me llama mucho la atención, aprendi lo basico, tambien a desplegar un proyecto a una maquina virtual.</td>
-            </tr>
-            <tr>
-                <td>Bases de Datos</td>
-                <td>3.1</td>
-                <td>Me gusto mucho esta materia, porque las bases de datos me llaman mucho la atención, el conectar, hacer las consultas y ver la subida y la bajada de datos.</td>
-            </tr>
-            <tr>
-                <td>Sistemas Operativos</td>
-                <td>3.2</td>
-                <td>Esta materia fue muy complicada, pero tambien muy interesante y me gusto mucho, ya que nos metemos mas a fondo a ver como funcionan los distintos componentes que conforman los sistemas operativos.</td>
-            </tr>
-            <tr>
-                <td>Ingenieria de Software</td>
-                <td>3.3</td>
-                <td>Esta materia es la continuacion de Analisis y Diseño, aca retomamos el proyecto que dejamos incompleto en Analisis y Diseño, me gusto mucho mas esta que la anterior, porque obtuve mas conocimientos y tambien puli mucho el producto.</td>
-            </tr>
-          </table>
-          <h2>Contacteme</h2>
-          <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="centradora">
 
-            <input type="hidden" name="apikey" value="30f61673-465c-4ae6-9a33-207c9c57ad95">
+            <img src="img/smigol.jpg" alt="Img1">
             
-            <label for="usuario">Ingrese su nombre:</label>
-            <input type="text" name="usuario" placeholder="Aqui su nombre" maxlength="40" id="usuario" required>
-            <br><br>
-
-            <label for="subject">Asunto:</label>
-            <input type="text" name="subject" placeholder="Aqui su asunto" maxlength="40" id="subject" required>
-            <br><br>
-
-            <label for="email">Ingrese su correo</label>
-            <input type="email" name="email" placeholder="Aqui su correo" maxlength="40" id="email" required>
-            <br><br>
-
-            <label for="message">Ingrese su mensaje:</label>
-            <textarea name="message" name="message" id="message" required></textarea>
-            <br><br>
             
-            <button type="submit">Enviar</button>
+            <div class="cuerpo">
+                
+                <div class="centrar">
+                    <h1>Danilo Esteban Quintero Duran</h1>
+                    <h2>09 / 08 / 1999</h2>
+                    <p>Mi nombre es Danilo Quintero mi infancia fue muy buena, muy divertida, salia todos los dias a la cuadra a jugar lo tipico en esos tiempos (la lleva, stop, el quemado, etc) jugaba mucho futbol, viaje a unos cuantos pueblos, no muchos y paises conozco solo Colombia mi pais natal y Venezuela.</p>
+                    <p>Soy estudiante de ingenieria de sistemas, la carrera es lo que esperaba, bastante dificil pero emocionante, lo que mas se me ha complicado es la fisica, lo que mas me gusta de la carrera es la programación, mas que todo orientada a web o a videojuegos, en 5 años me veo como desarrollador.</p>
+                </div>
+                <h3>Mis Hobbies</h3>
+                <ul>
+                    <li>Futbol</li>
+                    <li>Videojuegos</li>
+                    <li>escuchar musica</li>
+                    <li>programar videojuegos</li>
+                </ul>
+                <h3>Mis películas y series favoritas</h3>
+                <ul>
+                    <li>armageddon</li>
+                    <li>La casa de papel</li>
+                    <li>Bajo la misma estrella</li>
+                    <li>The Good Doctor</li>
+                    <li>La milla verde</li>
+                </ul>
+                <h3>Mi cancion favorita</h3>
+                <audio controls>
+                    <source src="audio/la-promesa.mp3" type="audio/mpeg">
+                </audio>
+            
+                    <h3>Mis materias favoritas</h3>
+                    <table>
+                        <tr class="encabezado">
+                            <th>Materia</th>
+                            <th>Nota</th>
+                            <th>Porque es de las favoritas</th>   
+                        </tr>
+                        <tr>
+                            <td>Fundamentos de programación</td>
+                            <td>3.1</td>
+                            <td>Me gusto mucho porque fue la primera vez que entre al mundo de la programación y aprendi por primera vez los fundamentos de un lenguaje.</td>
+                        </tr>
+                        <tr>
+                            <td>Programación Orientada a Objetos 2</td>
+                            <td>4.1</td>
+                            <td>Me encanto esta materia porque fue la primera vez que vi programacion web, una rama que me llama mucho la atención, aprendi lo basico, tambien a desplegar un proyecto a una maquina virtual.</td>
+                        </tr>
+                        <tr>
+                            <td>Bases de Datos</td>
+                            <td>3.1</td>
+                            <td>Me gusto mucho esta materia, porque las bases de datos me llaman mucho la atención, el conectar, hacer las consultas y ver la subida y la bajada de datos.</td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas Operativos</td>
+                            <td>3.2</td>
+                            <td>Esta materia fue muy complicada, pero tambien muy interesante y me gusto mucho, ya que nos metemos mas a fondo a ver como funcionan los distintos componentes que conforman los sistemas operativos.</td>
+                        </tr>
+                        <tr>
+                            <td>Ingenieria de Software</td>
+                            <td>3.3</td>
+                            <td>Esta materia es la continuacion de Analisis y Diseño, aca retomamos el proyecto que dejamos incompleto en Analisis y Diseño, me gusto mucho mas esta que la anterior, porque obtuve mas conocimientos y tambien puli mucho el producto.</td>
+                        </tr>
+                    </table><br><br>
+                    <div>
+                        <a href="contacto.html">Contacteme</a>
+                    </div>
+            </div>
+
+        </div>
         
-        </form>
     </body>
 </html>

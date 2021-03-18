@@ -1,0 +1,98 @@
+body{
+    margin-top: 0%;
+    background-color: #FEA16C;
+    font-family: 'Chango', cursive;
+}
+
+.centradora{
+    background-color: aquamarine;
+    margin-left: 15%;
+    margin-right:15%;
+    padding-bottom: 10%;
+}
+
+.cuerpo{
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: justify;
+}
+
+div h1{
+    color: #FEA16C;
+}
+
+.centrar{
+    text-align: center;
+}
+
+h3{
+    color: #ff5e00;
+} 
+
+h2{
+    color: #ff5e00;
+}
+
+img{
+    border: 4px solid #FEA16C;
+    padding: 8px;
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+}
+
+
+table, th, td {
+    border: 1px solid #ff5e00;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+
+.encabezado{
+    background-color: #fa803a;
+}
+
+.encabezado th{
+    color: white;
+}
+
+tr{
+    background-color: #ffc3a0;
+}
+
+a{
+    background-color: #ff5e00;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a:hover{
+    background-color: white;
+    color: #ff5e00;
+}
+
+.boton{
+    background-color: #ff5e00;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: white;
+    color: #ff5e00;
+}
